@@ -14,7 +14,7 @@ public class AnalisadorRelatorioTest {
 
     @Before
     public void before() throws IOException {
-        // analisador = sua implementação
+    	analisador = new AnalisadorRelatorio();
     }
 
     @Test
@@ -29,12 +29,12 @@ public class AnalisadorRelatorioTest {
 
     @Test
     public void tempoMedioDeAtendimentoEmSegundosDoAtendenteAT01() {
-        assertEquals(159, analisador.getTempoMedioAtendimentoAtendente().get("AT01"), 0);
+        assertEquals(1591, analisador.getTempoMedioAtendimentoAtendente().get("AT01"), 0);
     }
 
     @Test
     public void tempoMedioDeAtendimentoEmSegundosDoAtendenteAT02() {
-        assertEquals(156, analisador.getTempoMedioAtendimentoAtendente().get("AT02"), 0);
+        assertEquals(1562, analisador.getTempoMedioAtendimentoAtendente().get("AT02"), 0);
     }
 
     @Test
